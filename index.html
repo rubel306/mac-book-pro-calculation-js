@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac book pro-js product calculation</title>
+    <!-- tailwind css cdn  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <main class="flex gap-8 mt-6 justify-center w-3/4 mx-auto">
+        <div class="product-img my-3">
+            <img src="images/mac.png" class="w-100" alt="">
+        </div>
+        <div class="product-details">
+            <h2 class="text-5xl my-3 font-semibold">Customize your blue 24-inch iMac with Apple M1 chip. </h2>
+            <p class="mb-12">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil beatae, vitae inventore consequuntur dolore autem natus quo aliquid provident et, cupiditate in. Explicabo beatae mollitia necessitatibus molestiae. Accusamus, nemo suscipit?
+            </p>
+            
+            <!-- memory section  -->
+            <section class="memory mb-12">
+                <h4 class="text-3xl font-medium">Memory</h4>
+                <div class="buttons flex gap-4 " id="memory">
+                    <button id="memory-8gb" class="p-2 border-2 border-gray-400 rounded my-3 focus:bg-gray-400">8GB unified memory</button>
+                    <button id="memory-16gb" class="p-2 border-2 border-gray-400 rounded my-3 focus:bg-gray-400">16GB unified memory</button>
+                </div>
+            </section>
+
+            <!-- storage section -->
+            <section class="storage mb-12">
+                <h4 class="text-3xl font-medium">Storage</h4>
+                <div class="buttons flex gap-4 " id="storage">
+                    <button id="storage-256gb" class="p-2 border-2 border-gray-400 rounded my-3 focus:bg-gray-400">256GB SSD storage</button>
+                    <button id="storage-512gb" class="p-2 border-2 border-gray-400 rounded my-3 focus:bg-gray-400">512GB SSD storage</button>
+                    <button id="storage-1tb" class="p-2 border-2 border-gray-400 rounded my-3 focus:bg-gray-400">1TB SSD storage</button>
+                </div>
+            </section>
+
+            <!-- delivery section     -->
+            <section class="storage mb-12">
+                <h4 class="text-3xl font-medium">Choose your delivery option</h4>
+                <div class="buttons flex gap-4" id="delivery">
+                    <button id="delviry-0" class="p-2 border-2 border-gray-400 rounded my-3 focus:bg-gray-400">Friday, Aug 25 FREE Prime Delivery</button>
+                    <button id="delivery-20" class="p-2 border-2 border-gray-400 rounded my-3 focus:bg-gray-400" class="p-2 border-2 border-gray-400 rounded my-3 focus:bg-gray-400">Friday, Aug 21 Delivery Charge $20</button>
+                </div>
+            </section>
+
+            <!-- pricing section  -->
+            <section class="pricing w-2/3 ">
+                <div class="flex font-semibold justify-between border-b-2 mb-3 py-2">
+                    <div>Best Price</div>
+                    <div>$<span id="base-price">1299</span> </div>
+                </div>
+                <div class="flex font-semibold justify-between border-b-2 mb-3 py-2">
+                    <div>Extra Memory Cost</div>
+                    <div>$<span id="extra-memory-cost">0</span> </div>
+                </div>
+                <div class="flex font-semibold justify-between border-b-2 mb-3 py-2">
+                    <div>Extra Storage Cost</div>
+                    <div>$<span id="extra-storage-cost">0</span> </div>
+                </div>
+                <div class="flex font-semibold justify-between border-b-2 border-gray-900 mb-3 py-2">
+                    <div>Extra Delivery Cost</div>
+                    <div>$<span id="extra-delivery-cost">0</span> </div>
+                </div>
+                <div class="flex font-semibold justify-between border-b-2 mb-3 py-2">
+                    <div>Total Price</div>
+                    <div>$<span id="total-price">1299</span> </div>
+                </div>
+            </section>
+
+            <section class="promo-code my-8">
+                <p class="font-medium">Add Promo Code </p>
+                <input class="border border-gray-200 p-1 mt-1" type="text" id="coupon-box">
+                <button class="p-2 px-3 rounded bg-red-400 text-white" id="apply-coupon">Apply</button>
+            </section>
+            
+        </div>
+    </main>
+
+    <!-- footer price     -->
+    <footer>
+        <h2 class="text-5xl py-3 border-t-2 font-bold text-center">
+            Total: $<span id="grand-total">1299</span>
+        </h2>
+    </footer>
+
+    <!-- main js file -->
+    <script src="app.js"></script>
+</body>
+</html>
